@@ -16,7 +16,7 @@ app.get('/', (req, res, next) => {
 
 app.post('/api/Auth/Login', (req, res, next) => {
   axios
-    .post(ENGDIS_BASE_API_URL + 'Auth/forcelogin', {
+    .post(ENGDIS_BASE_API_URL + '/Auth/forcelogin', {
       CommunityVersion: '100',
       InstitutionId: '5232957', // KMITL
       Password: req.body.password,
